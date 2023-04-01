@@ -23,6 +23,7 @@
     <ul>
       <li><router-link to="/offer">OFFER</router-link></li>
       <li><router-link to="/portfolio">PORTFOLIO</router-link></li>
+      <li><router-link to="/my_cv">CV</router-link></li>
       <li><router-link to="/hobbies">MY HOBBIES</router-link></li>
       <li><router-link to="/contacts">CONTACT ME</router-link></li>
     </ul>

@@ -4,6 +4,7 @@ import MainContent from '@/views/MainContent.vue'
 import PortfolioProjects from '@/views/PortfolioProjects'
 import MyOffer from '@/views/MyOffer.vue'
 import MyHobbies from '@/views/MyHobbies.vue'
+import MyCv from '@/views/MyCv.vue'
 
 export default createRouter({
   history: createWebHashHistory(),
@@ -13,6 +14,7 @@ export default createRouter({
     {path: '/portfolio', component: PortfolioProjects},
     {path: '/offer', component: MyOffer},
     {path: '/hobbies', component: MyHobbies},
+    {path: '/my_cv', component: MyCv},
   ],
 })
 
