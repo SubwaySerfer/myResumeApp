@@ -12,6 +12,9 @@
             class="promo_contacts_link"
             >subwayserfer.job@gmail.com</a
           >
+          <a href="https://github.com/SubwaySerfer" class="promo_contacts_link"
+            >github.com/SubwaySerfer</a
+          >
         </div>
       </section>
       <section class="experience">
@@ -46,7 +49,7 @@
           <li class="skills__item">Vue, Vuex, Vue route</li>
           <li class="skills__item">Tailwind, SASS</li>
           <li class="skills__item">Bitrix, OTRS, HelpDesk</li>
-          <li class="skills__item">DRY, KISS, YAGNI</li>
+          <li class="skills__item">DRY, KISS, YAGNI, BEM</li>
         </ul>
 
         <h3 class="skills_h3">Languages:</h3>
@@ -68,10 +71,18 @@
 
         <h3 class="skills_h3">Podcasts and YouTubers:</h3>
         <ul class="skills_ul">
-          <li class="skills__item"><a href="">Web-standards</a></li>
-          <li class="skills__item"><a href="">Frontend Weekend</a></li>
-          <li class="skills__item"><a href="">JavaScript.Ninja </a></li>
-          <li class="skills__item"><a href="">Rolling Scopes School </a></li>
+          <li class="skills__item">
+            <a href="" class="skills__item_link">Web-standards</a>
+          </li>
+          <li class="skills__item">
+            <a href="" class="skills__item_link">Frontend Weekend</a>
+          </li>
+          <li class="skills__item">
+            <a href="" class="skills__item_link">JavaScript.Ninja </a>
+          </li>
+          <li class="skills__item">
+            <a href="" class="skills__item_link">Rolling Scopes School </a>
+          </li>
         </ul>
       </section>
       <section class="code_example">
@@ -109,7 +120,7 @@ h3 {
   align-items: center;
   width: 100%;
   height: 100%;
-  grid-area: 1 / 4 / end / end;
+  grid-area: 1 / 2 / end / end;
   padding: 15px 25px 0;
 }
 .wrapper_cv {
@@ -136,12 +147,18 @@ h3 {
   flex: 1 1 20px;
 }
 .promo_contacts {
-  width: 137px;
+  width: 25rem;
   text-align: left;
   border-left: #ffe804 1px solid;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
 }
 .promo_contacts_link {
   font-size: 1rem;
+  color: #3939a7;
+  font-weight: 500;
 }
 .experience__label {
   font-weight: 600;
@@ -177,11 +194,20 @@ h3 {
   height: 3px;
   width: 3px;
   position: absolute;
-  left: -9px;
+  left: -12px;
   top: 7.5px;
   content: '';
 }
 .skills_ul {
+  margin-left: 5px;
   padding: 0 10px 10px;
 }
+.skills__item_link {
+  cursor: pointer;
+  color: #3939a7;
+  font-weight: 500;
+}
+/* .skills__item_link:hover {
+  transform: scale(1.5);
+} */
 </style>

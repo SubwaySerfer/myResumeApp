@@ -1,8 +1,6 @@
 <template>
-  <div
-    id="app"
-    class="grid grid-cols-10 grid-rows-4 bg-slate-400 h-screen 2xl:min-h-[950px] xl:min-h-[830px]"
-  >
+  <div id="app" class="app__content">
+    <!-- app__content grid grid-cols-10 grid-rows-4 bg-slate-400 h-screen 2xl:min-h-[950px] xl:min-h-[830px] -->
     <mcv-image-start />
     <!-- <mcv-sidebar /> -->
     <router-view></router-view>
@@ -65,4 +63,13 @@ h1,
 h2 {
   margin: 0;
 }
+
+.app__content {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 25rem repeat(8, 1fr);
+}
 </style>
+
+<!-- app__content grid grid-cols-10 grid-rows-4 bg-slate-400 h-screen 2xl:min-h-[950px] xl:min-h-[830px] -->
