@@ -55,3 +55,14 @@ nav a.router-link-exact-active {
   color: #42b983;
 }
 </style> -->
+
+<style>
+html {
+  font-size: 10px;
+}
+h3,
+h1,
+h2 {
+  margin: 0;
+}
+</style>
