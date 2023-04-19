@@ -3,7 +3,7 @@
     <div class="wrapper_cv">
       <section class="header">
         <div class="promo_block">
-          <h1 class="name_h1">Afanasyev Aleksander</h1>
+          <h1 class="name_h1">Aleksander Null</h1>
           <h2 class="name_sublime">Front-end Developer</h2>
         </div>
         <div class="promo_contacts">

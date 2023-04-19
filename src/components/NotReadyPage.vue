@@ -3,12 +3,12 @@
     <figure class="ready-gif">
       <img
         class="ready-gif_img"
-        src="../assets/video/pageNotReady.gif"
+        src="../assets/video/pageNotReadyCompress.gif"
         alt="This animated GIF how i crash computer"
       />
     </figure>
     <div class="ready-content">
-      <h3 class="ready-content_label">This page not ready!</h3>
+      <h3 class="ready-content_label">This page is not ready!</h3>
     </div>
   </section>
 </template>

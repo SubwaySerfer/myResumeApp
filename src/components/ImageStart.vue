@@ -9,9 +9,7 @@
 
     <div class="">
       <router-link to="/" class="">
-        <h1 class="avatar_name nav_arr_links">
-          Afanasyev Aleksander
-        </h1></router-link
+        <h1 class="avatar_name nav_arr_links">Aleksander Null</h1></router-link
       >
       <h2 class="avatar_name_sublime">Frontend Developer</h2>
     </div>
