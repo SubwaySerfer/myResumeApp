@@ -69,6 +69,7 @@ h2 {
   width: 100vw;
   height: 100vh;
   grid-template-columns: 25rem repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
 }
 </style>
 
