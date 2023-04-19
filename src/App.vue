@@ -57,6 +57,7 @@ nav a.router-link-exact-active {
 <style>
 html {
   font-size: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h3,
 h1,
