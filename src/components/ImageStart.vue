@@ -9,18 +9,28 @@
 
     <div class="">
       <router-link to="/" class="">
-        <h1 class="avatar_name">Afanasyev Aleksander</h1></router-link
+        <h1 class="avatar_name nav_arr_links">
+          Afanasyev Aleksander
+        </h1></router-link
       >
       <h2 class="avatar_name_sublime">Frontend Developer</h2>
     </div>
     <section class="nav_arr">
       <ul>
-        <li><router-link to="/offer">OFFER</router-link></li>
-        <li><router-link to="/portfolio">PORTFOLIO</router-link></li>
-        <li><router-link to="/my_cv">CV</router-link></li>
+        <li class="nav_arr_links">
+          <router-link to="/offer">OFFER</router-link>
+        </li>
+        <li class="nav_arr_links">
+          <router-link to="/portfolio">PORTFOLIO</router-link>
+        </li>
+        <li class="nav_arr_links"><router-link to="/my_cv">CV</router-link></li>
         <br />
-        <li><router-link to="/hobbies">MY HOBBIES</router-link></li>
-        <li><router-link to="/contacts">CONTACT ME</router-link></li>
+        <li class="nav_arr_links">
+          <router-link to="/hobbies">MY HOBBIES</router-link>
+        </li>
+        <li class="nav_arr_links">
+          <router-link to="/contacts">CONTACT ME</router-link>
+        </li>
       </ul>
     </section>
 
@@ -92,11 +102,16 @@ export default {
   box-sizing: border-box;
   background-color: black;
   border-radius: 25px;
+  transition: all 0.25s ease-in-out;
 }
 .nav_avatar_img {
   border-radius: 5px;
   border: 2px solid black;
   border-radius: 25px;
+}
+
+.nav_avatar:hover {
+  transform: scale(105%);
 }
 
 .avatar_name {
@@ -132,9 +147,22 @@ export default {
 }
 .nav_arr_social_items_el {
   width: 2rem;
+  transition: all 0.25s ease-in-out;
 }
-
+.nav_arr_social_items_el:hover,
+.nav_arr_social_items_in:hover {
+  transform: scale(120%);
+}
 .nav_arr_social_items_in {
   width: 1.6rem;
+  transition: all 0.25s ease-in-out;
+}
+.nav_arr_links {
+  transition: all 0.25s ease-in-out;
+}
+
+.nav_arr_links:hover {
+  transform: scale(105%);
+  color: #f63200;
 }
 </style>

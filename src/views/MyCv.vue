@@ -89,6 +89,7 @@
         <h3 class="skills_h3">Code example:</h3>
       </section>
     </div>
+    <div class="back_color"></div>
   </div>
 </template>
 
@@ -114,34 +115,40 @@ h3 {
   text-align: center;
 }
 .main_cv {
-  background-color: #7575d9;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  align-items: flex-start;
+
+  box-sizing: border-box;
   grid-area: 1 / 2 / end / end;
-  padding: 15px 25px 0;
+  padding: 15px 20px 0;
+  overflow-x: hidden;
+}
+.back_color {
+  background-color: #7575d9;
+  z-index: -10;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
 }
 .wrapper_cv {
-  /* background-color: #a603a6; */
   background-color: #b3b3b3;
   width: 100%;
-  height: 100%;
-  padding: 15px 13px 0;
+  box-sizing: border-box;
+  height: auto;
+  padding: 15px 13px;
 }
 .header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  /* padding: 10px 5px 0; */
 }
 .promo_block {
   height: auto;
   width: 100%;
   padding-bottom: 20px;
   align-self: center;
-  /* flex: 2 1; */
 }
 .promo_empty {
   flex: 1 1 20px;
@@ -159,6 +166,11 @@ h3 {
   font-size: 1rem;
   color: #3939a7;
   font-weight: 500;
+  transition: all 0.25s ease-in-out;
+}
+.promo_contacts_link:hover {
+  color: #f63200;
+  transform: scale(102%);
 }
 .experience__label {
   font-weight: 600;
@@ -206,8 +218,11 @@ h3 {
   cursor: pointer;
   color: #3939a7;
   font-weight: 500;
+  display: inline-block;
+  transition: all 0.25s ease-in-out;
 }
-/* .skills__item_link:hover {
-  transform: scale(1.5);
-} */
+.skills__item_link:hover {
+  transform: scale(105%);
+  color: #f63200;
+}
 </style>
